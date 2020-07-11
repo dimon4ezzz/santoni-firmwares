@@ -23,3 +23,5 @@
 ## Links
 * 4PDA forum: https://4pda.ru/forum/index.php?showtopic=821670
 * XDA Developers forum: https://forum.xda-developers.com/xiaomi-redmi-4x/development
+* **Redmi 4X** tag on Xiaomi Firmware: https://xiaomifirmware.com/tag/redmi-4x/
+* **santoni** tag on Android File Host: https://androidfilehost.com/?w=developers&did=2459
