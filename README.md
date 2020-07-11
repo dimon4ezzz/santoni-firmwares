@@ -1,6 +1,6 @@
 # Santoni Firmwares list
 
-[Marshmallow](santoni-m.csv) • [Nougat]() • [Oreo]() • [Pie](santoni-p.csv) • [Q](santoni-q.csv) • [R]()
+[Marshmallow](santoni-m.csv) • [Nougat](santoni-n.csv) • [Oreo]() • [Pie](santoni-p.csv) • [Q](santoni-q.csv) • [R]()
 
 ## CSV Fields list
 1. Name (**required**) — firmware name (without version name, suffixes `OS`, `ROM`)
