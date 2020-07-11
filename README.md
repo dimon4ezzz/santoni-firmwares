@@ -25,3 +25,11 @@
 * XDA Developers forum: https://forum.xda-developers.com/xiaomi-redmi-4x/development
 * **Redmi 4X** tag on Xiaomi Firmware: https://xiaomifirmware.com/tag/redmi-4x/
 * **santoni** tag on Android File Host: https://androidfilehost.com/?w=developers&did=2459
+
+## Cleaning CSV
+There are regular expressions, used for cleaning csv files (make it smaller). Used `$1` notation reference group for VS Code.
+1. `(?:https:\/\/)?sourceforge\.net\/projects\/([^\/]+)\/files[^,]*\/([^\/]+.zip)\/download` to `download.sourceforge.net/$1/$2`
+1. `(?:https:\/\/)?forum\.xda-developers\.com\/([^,]*)\/[^,]*-t(\d+)` to `forum.xda-developers.com/$1/-t$2`
+1. `(?:https:\/\/)?4pda\.ru\/forum\/index.php\?s=&showtopic=[\d]+&view=findpost&p=(\d+)` to `4pda.ru/forum/index.php?act=findpost&pid=$1`
+1. remove `https://`
+1. `\/,` to `,`
