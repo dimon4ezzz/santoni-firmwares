@@ -11,7 +11,7 @@ import (
 const filenameIndex = 0
 
 // template for index
-const templateHTML = "template.html"
+const templateHTML = ".github/workflows/template.html"
 
 // directory for GitHub Pages
 const docsDir = "docs/"
