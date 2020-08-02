@@ -129,6 +129,7 @@ func getHTMLFileWriter(sourceID string) *os.File {
 }
 
 func getHTMLFilename(sourceID string) string {
+	println("processing " + sourceID)
 	// concats directory path and html extension
 	return docsDir + sourceID + ".html"
 }
