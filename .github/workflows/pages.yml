@@ -16,7 +16,12 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v2
     - name: Run Go script
-      run: sh script.sh
+      shell: bash -e {0}
+      run: |
+        for i in "../../*.csv"
+        do
+            go run main.go $i
+        done
     - name: Deploy to docs
       run: |
         git config --global user.name 'GitHub Action'
