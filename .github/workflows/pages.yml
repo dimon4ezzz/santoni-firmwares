@@ -18,9 +18,9 @@ jobs:
     - name: Run Go script
       shell: bash -e {0}
       run: |
-        for i in "../../*.csv"
+        for i in "*.csv"
         do
-            go run main.go $i
+            go run .github/workflows/main.go $i
         done
     - name: Deploy to docs
       run: |
