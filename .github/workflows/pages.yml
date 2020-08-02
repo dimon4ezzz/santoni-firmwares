@@ -15,8 +15,6 @@ jobs:
       id: go
     - name: Checkout repo
       uses: actions/checkout@v2
-    - name: chmod script
-      run: chmod +x script.sh
     - name: Run Go script
       run: sh script.sh
     - name: Deploy to docs
