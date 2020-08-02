@@ -13,9 +13,6 @@ const filenameIndex = 0
 // template for index
 const templateHTML = "template.html"
 
-// directory with .csv files
-const rootDir = "../../"
-
 // directory for GitHub Pages
 const docsDir = "docs/"
 
@@ -61,8 +58,6 @@ func getSourceFilename() string {
 func getSourceID(source string) string {
 	// remove last .csv
 	str := strings.TrimSuffix(source, ".csv")
-	// remove directory path
-	str = strings.TrimPrefix(str, rootDir)
 
 	return str
 }
@@ -82,7 +77,7 @@ func getSourceFileReader(sourceID string) *os.File {
 
 func getCSVFilename(sourceID string) string {
 	// concats directory path and csv extension
-	return rootDir + sourceID + ".csv"
+	return sourceID + ".csv"
 }
 
 func getContext(reader *csv.Reader, sourceID string) *Context {
@@ -135,7 +130,7 @@ func getHTMLFileWriter(sourceID string) *os.File {
 
 func getHTMLFilename(sourceID string) string {
 	// concats directory path and html extension
-	return rootDir + docsDir + sourceID + ".html"
+	return docsDir + sourceID + ".html"
 }
 
 func processTemplate(writer *os.File, context *Context) {
