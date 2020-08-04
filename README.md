@@ -1,5 +1,5 @@
 # Santoni Firmwares list
-[![Pages](https://img.shields.io/badge/Pages-%2Fdocs-green)](/docs)
+[![Pages](https://img.shields.io/badge/Pages-%2Fdocs-green)](https://dimon4ezzz.github.io/santoni-firmwares)
 
 [Marshmallow](santoni-m.csv) • [Nougat](santoni-n.csv) • [Oreo](santoni-o.csv) • [Pie](santoni-p.csv) • [Q](santoni-q.csv) • [R]()
 
