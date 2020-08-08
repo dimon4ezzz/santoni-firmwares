@@ -26,10 +26,6 @@ jobs:
       run: |
         git add -A
         if [[ `git status --porcelain` ]]; then
-        echo "1"
-        git commit -am 'update docs' --null
-        echo "2"
-        git push -q
-        echo "3"
+        git commit -am 'update docs'
+        git push
         fi
-        echo "4"
